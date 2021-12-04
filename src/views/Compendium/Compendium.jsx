@@ -5,7 +5,6 @@ import PokemonList from '../../components/PokemonList/PokemonList.jsx';
 import { fetchPokemonByType, getPokemon } from '../../services/pokemon.js';
 import { fetchTypes } from '../../services/pokemon.js';
 import Controls from '../../components/Controls/Controls';
-import SortForm from '../../components/Forms/SortForm.jsx';
 
 export default function Compendium() {
   const [loading, setLoading] = useState(true);
