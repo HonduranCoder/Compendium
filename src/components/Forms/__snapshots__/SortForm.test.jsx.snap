@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test sort 1`] = `
+<select
+  aria-label="sort"
+>
+  <option
+    value="asc"
+  >
+    ASC
+  </option>
+  <option
+    value="desc"
+  >
+    DESC
+  </option>
+</select>
+`;
