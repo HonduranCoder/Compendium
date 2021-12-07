@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Pokemon List 1`] = `
+<ul
+  aria-label="pokemonList"
+>
+  <li>
+    <div
+      aria-label="pokemon"
+    >
+      <img
+        alt="poke"
+      />
+      <p>
+        Name: 
+        anorth
+      </p>
+      <p>
+        HP: 
+        45
+      </p>
+      <p>
+        Attack: 
+        95
+      </p>
+      <p>
+        Defense: 
+        50
+      </p>
+      <p>
+        Shape: 
+        armor
+      </p>
+    </div>
+  </li>
+  <li>
+    <div
+      aria-label="pokemon"
+    >
+      <img
+        alt="poke"
+      />
+      <p>
+        Name: 
+        accelgor
+      </p>
+      <p>
+        HP: 
+        80
+      </p>
+      <p>
+        Attack: 
+        70
+      </p>
+      <p>
+        Defense: 
+        40
+      </p>
+      <p>
+        Shape: 
+        arms
+      </p>
+    </div>
+  </li>
+</ul>
+`;
