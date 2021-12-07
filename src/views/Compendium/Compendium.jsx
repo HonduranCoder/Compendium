@@ -22,6 +22,7 @@ export default function Compendium() {
     getPokemonList();
   }, []);
 
+  //do not need loading state because then you will wait for dropdown to load page.
   useEffect(() => {
     async function getTypes() {
       const pokemonTypes = await fetchTypes();
@@ -33,15 +34,19 @@ export default function Compendium() {
   useEffect(() => {
     if (!selectedType) return;
     async function getIndieTypes() {
+      setLoading(true);
       if (selectedType === 'all') {
         const fetchPokemon = await getPokemon();
         setPokemonList(fetchPokemon);
+        //set false because set true at the top
+        setLoading(false);
       } else {
         const filteredPokemon = await fetchPokemonByType(
           selectedType,
           sortPokemon
         );
         setPokemonList(filteredPokemon);
+        setLoading(false);
       }
     }
     getIndieTypes();
